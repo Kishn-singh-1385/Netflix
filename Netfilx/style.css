@@ -1,0 +1,983 @@
+*{  margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/IN-en-20240603-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 87vh;
+    position: relative;
+    
+}
+.main .box{
+    height: 87vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.55;
+    position: absolute;
+    top: 0%;
+}
+nav{ 
+    display: flex;
+    padding: 0 10px;
+    align-items:end;
+    margin: auto;
+    max-width: 76vw;
+    justify-content: space-between;
+    height: 69px;
+    
+}
+@media screen and (max-width:1278px){
+    nav{
+        padding-left: 32px;
+        padding-right: 6rem;
+        max-width: 100%;
+    }
+}
+nav img{
+    color: red;
+    position: relative;
+    z-index: 1;
+}
+
+nav button{
+    position: relative;
+    top: -12px;
+    z-index: 1;
+    
+}
+.signin{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(238, 233, 233);
+    background-color: red;
+    border: 1px red solid;
+    border-radius: 5px;
+    width: 80px;
+    height: 32px;
+}
+.english{
+    font-size: 17px;
+    font-weight: 549;
+    color: white;
+    border: 1px rgb(170, 163, 163) solid;
+    background-color: #131313;
+    width: 125px;
+    height: 33px;
+    border-radius: 5px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.upbut{
+    display: flex;
+    align-items: center;
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero{
+    font-family: "Kanit", sans-serif;
+  
+    height: calc(100% - 69px);
+    color: white;
+    position: relative;
+    z-index: 19;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0 23px;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+.hero> :first-child{
+    font-weight: 800;
+  font-size: 48px;
+}
+.hero> :nth-child(2){
+ font-weight: 350;
+  font-size: 26px;
+}
+.hero> :nth-child(3){
+ font-weight: 300;
+  font-size: 19px;
+}
+.email{
+    width: 60vw;
+    height: 80px;
+    /* position: absolute; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:0px;
+    margin: 0;
+    
+   
+}
+.start{
+    height: 55px;
+    width:200px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 25px;
+    font-weight:500;
+    color: rgb(226, 220, 220);
+    background-color: rgb(206, 12, 12);
+    border: 0.5px rgb(206, 12, 12) solid;
+    border-radius: 4px;
+    position: relative;
+    top: 4px;
+    
+}
+.emailaddress{
+    margin: 2.5px;
+  height: 55px;
+  width:360px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  border: 1px rgb(117, 115, 115) solid;
+  border-radius: 4px;
+  
+}
+.line{
+    width: 100vw;
+    height: 8px;
+    background-color: #333232;
+    
+}
+@media screen and (max-width:960px){
+    nav img{
+        height: 24px;
+        width: 89px;
+        
+    }
+    .signin{
+        width: 77px;
+    }
+    .english{
+        font-size: 14px;
+    }
+    nav{
+        align-items: start;
+        padding-top: 1.8rem;
+        padding-right: 2rem;
+    }
+    .hero> :first-child{
+        font-weight: 500;
+        font-size: 32px;
+    }
+    .hero> :nth-child(2){
+        font-weight: 300;
+         font-size: 18px;
+       }
+       .hero> :nth-child(3){
+        font-weight: 300;
+         font-size: 18px;
+       }
+       .hero{
+        height: calc(100% - 100px);
+        flex-wrap: nowrap;
+       }
+       .main{
+            height: 65vh;
+       }
+       .main .box{
+            height: 65vh;
+       }      
+}
+
+.sec1{
+    color: white;
+    width: 80vw;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 60px;
+    
+}
+
+.tvbanner{
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tvbanner> :first-child{
+    font-weight: 800;
+  font-size: 48px;
+  line-height: 2;
+}
+.tvbanner> :nth-child(2){
+    font-weight: 350;
+  font-size: 25px;
+  line-height: 1.2;
+}
+.tvimage{
+    position: relative;
+    /* z-index: 30; */
+
+}
+.tv{
+    position: relative;
+    z-index: 30;
+}
+
+.vid1{
+position: absolute;
+top: 92px;
+right: 75px;
+z-index: 1;
+
+}
+@media screen and (max-width:960px){
+    .sec1{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .tvbanner> :first-child{
+        font-weight: 500;
+      font-size: 33px;
+    }
+    .tvbanner> :nth-child(2){
+        font-weight: 500;
+      font-size: 17px;
+    }
+}
+
+.sec2{
+    color: white;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 60px;
+}
+sec2img2{
+    
+    width:56;
+}
+
+.mobtext{
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mobtext> :first-child{
+    font-weight: 800;
+  font-size: 48px;
+  line-height: 1.2;
+}
+.mobtext> :nth-child(2){
+    font-weight: 350;
+  font-size: 25px;
+  /* line-height: 1.2; */
+}
+
+.downanim{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 345px;
+    left: 153px;
+    z-index: 1000;
+    height: 100px;
+    width: 310px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(102, 100, 100);
+    border-radius: 10px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.downtext{
+    display: flex;
+    flex-direction: column;
+    position: absolut;
+    left: 80px;
+}
+.mobile{
+    position: relative;
+}
+
+.downtext> :first-child{
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.downtext> :nth-child(2){
+    font-size: 17px;
+    color: rgb(12, 87, 185);
+}
+@media screen and (max-width:960px){
+    .sec2{
+        flex-direction: column-reverse;
+        height: 600px;
+        text-align: center;
+        padding: 50px;
+    }
+    .mobtext> :first-child{
+        font-weight: 500;
+      font-size: 33px;
+    }
+    .mobtext> :nth-child(2){
+        font-weight: 350;
+      font-size: 17px;
+    }
+}   
+
+.sec3{
+    color: white;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.vid2{
+    position: absolute;
+    top: 52px;
+    right: 75px;
+    clip: rect(0px, 428px, 224px, 23px);
+/* z-index: 1; */
+}
+@media screen and (max-width:960px){
+    .sec3{
+        flex-direction: column;
+        height: 600px;
+        text-align: center;
+        padding: 50px;
+        gap: 3rem;
+    }
+    
+} 
+
+.sec4{
+    color: white;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 60px;
+}
+@media screen and (max-width:960px){
+    .sec4{
+        flex-direction: column-reverse;
+        height: 600px;
+        text-align: center;
+        padding: 50px;
+        gap: 3rem;
+    } 
+} 
+
+.sec5{
+    color: white;
+    width: 80vw;
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 72vh;
+    width: 80vh;
+    margin-bottom: 40px;
+    
+}
+
+.freq{
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 2;
+}
+
+.q1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333232;
+    width: 73vw;
+    height: 83px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: "Kanit", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    
+}
+
+.q1:hover{
+    background-color: #525151;
+}
+
+.lowtxt{
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2.2;
+}
+.start2{
+    height: 55px;
+    width:200px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 25px;
+    font-weight:500;
+    color: rgb(226, 220, 220);
+    background-color: rgb(206, 12, 12);
+    border: 0.5px rgb(206, 12, 12) solid;
+    border-radius: 4px;
+    position: relative;
+    top: 4px;
+    
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    padding-bottom: 25px;
+}
+.links{
+    display: flex;;
+    flex-direction: column;
+    
+}
+footer{
+    padding-top: 70px;
+    max-width: 70vw;
+    margin: auto;
+    color: rgb(170, 168, 168);
+    line-height: 2.2;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    
+}
+.english2{
+    font-size: 17px;
+    font-weight: 549;
+    color: white;
+    border: 1px rgb(170, 163, 163) solid;
+    background-color: #131313;
+    width: 125px;
+    height: 33px;
+    border-radius: 5px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a:link {
+    
+    color: rgb(170, 168, 168);
+    background-color: transparent;
+    
+  }
+
+  .last{
+    line-height: 4;
+  }
+@media screen and (max-width:960px){
+    .freq{
+        font-weight: 700;
+        font-size: 33px;
+    }
+    .q1{
+        font-size: 20px;
+    }
+} 
+
+@media screen and (max-width:450px){
+    /* sec 3 */
+    .tv{
+        width: 27rem;
+    }
+    .vid2{
+        top: 22px;
+        right: -107px;
+        clip: rect(0px, 285px, 170px, 23px);
+    }
+
+    /* main*/
+    nav img{
+        height: 20%;
+        width: 35%;
+        
+    }
+    .signin{
+        width: 40%;
+        height: 30%;
+        font-size: 0.6rem;
+    }
+    .upbut{
+        justify-content: space-around;
+    }
+    .english{
+        font-size: 1rem;
+        width: 53%;
+        height: 30%;
+        border-radius: 5px;
+    }
+    .english img{
+        height: 18%;
+        width: 18%;
+    }
+    nav{
+        align-items: start;
+        padding-top: 1.8rem;
+        padding-right: 2rem;
+    }
+    .hero> :first-child{
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    .hero> :nth-child(2){
+        font-weight: 100;
+         font-size: 0.6rem;
+    }
+    .hero> :nth-child(3){
+        font-weight: 100;
+         font-size: 0.6rem;
+    }
+    .emailaddress{
+        width: 46%;
+        height: 50%;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .email{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        width: 70%;
+        height: 16%;
+        padding-bottom: 30px;
+    }
+    .start{
+        height: 54%;
+        width: 24%;
+        font-size: 1.6rem;
+        font-weight: 600;
+        top: 0px;
+        padding-bottom: 15px;
+    }
+    
+    
+    .hero{
+        height: calc(100% - 100px);
+        flex-wrap: nowrap;
+        gap: 0.2rem;
+    }
+    .sec1{
+        height: 65vh;
+    }
+    .tvbanner> :first-child{
+        font-weight: 100;
+      font-size: 1.4rem;
+    }
+    .tvbanner> :nth-child(2){
+        font-weight: 100;
+      font-size: 0.6rem;
+    }
+    .tv{
+        left: 0px;
+        width: 19rem;
+        height: 14rem;
+    }
+    .vid1{
+        top: 43px;
+    right: 17px;
+    z-index: 1;
+    width: 17rem;
+    height: 7.85rem;
+    }
+    .sec2{
+        height: 65vh;
+    }
+    .mobtext> :first-child{
+        font-weight: 100;
+      font-size: 1.3rem;
+    }
+    .mobtext> :nth-child(2){
+        font-weight: 100;
+      font-size: 0.65rem;
+    }
+    .sec2img{
+        width: 20rem;
+        height: 13rem;
+    }
+    .sec2img2{
+        width: 7rem;
+        height: 4rem;
+    }
+    .downanim{
+        height: 4rem;
+        width: 9rem;
+        margin: auto;
+        top: 167px;
+        left: 76px;
+    }
+    .downtext> :first-child{
+        font-family: "Kanit", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    
+    .downtext> :nth-child(2){
+        font-size: 0.8rem;
+        color: rgb(12, 87, 185);
+    }
+    .downtext{
+        left: 176px;
+    }
+
+    .sec3{
+        height: 65vh;
+    }
+    #sec3tv{
+        left: -3px;
+        width: 19rem;
+        height: 12rem;
+        top: -13px;
+    }
+    .vid2{
+        top: -6px;
+        right: 62px;
+        width: 13rem;
+        height: 6.95rem;
+    }
+
+    .sec4{
+        flex-direction: column-reverse;
+        height: 65vh;
+        text-align: center;
+        padding: 50px;
+        gap: 2rem;
+    } 
+    .sec4img{
+        width: 16rem;
+        height: 10.95rem;
+    }
+
+    .sec5{
+        height: 80vh;
+    }
+    .freq{
+        font-weight: 300;
+        font-size: 1.3rem;
+    }
+    .q1{
+        width: 21rem;
+        height: 1.5rem;
+        font-size: 0.7rem;
+        font-weight: 100;
+    }
+    .lowtxt{
+        font-size: 0.6rem;
+        font-weight: 100;
+        line-height: 2.2;
+    }
+    .plus{
+        width: 1rem;
+        height: 1rem;
+    }
+    .email2{
+        width: 52%;
+        height: 40%;
+    }
+    .gsarrow{
+        width: 7px;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .main{
+        height: 61vh;
+        width: 100%;
+    }
+    .main .box{
+        height: 61vh;
+        width: 100%;
+    }
+    nav img{
+        height: 50%;
+        width: 50%;
+    }
+    .signin{
+        width: 39%;
+        height: 50%;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .upbut{
+        justify-content: space-around;
+    }
+    .english{
+        font-size: 1rem;
+        width: 55%;
+        height: 30%;
+        border-radius: 5px;
+    }
+    .english img{
+        height: 18%;
+        width: 18%;
+    }
+    nav{
+        align-items: start;
+        padding-top: 1.8rem;
+        padding-right: 2rem;
+    }
+    .hero> :first-child{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .hero> :nth-child(2){
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    .hero> :nth-child(3){
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+    .emailaddress{
+        width: 46%;
+        height: 50%;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .gsarrow{
+        width: 20px;
+    }
+    .email{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        width: 70%;
+        height: 16%;
+        padding-bottom: 30px;
+    }
+    .start{
+        height: 54%;
+        width: 24%;
+        font-size: 1.6rem;
+        font-weight: 600;
+        top: 0px;
+        padding-bottom: 15px;
+    }
+    
+    
+    .hero{
+        height: calc(100% - 100px);
+        flex-wrap: nowrap;
+        gap: 0.7rem;
+    }
+
+
+    .sec1{
+        height: 40vh;
+        width: 100% ;
+    }
+    .tvbanner{
+        padding-left: 1%;
+    }
+    .tvbanner> :first-child{
+    font-weight: 800;
+    font-size: 3rem;
+    width: 71%;
+
+    }
+    .tvbanner> :nth-child(2){
+    font-weight: 350;
+    font-size: 1.5rem;
+    width: 71%;
+    }
+    .tv{
+        top: 20px;
+        left: -127px;
+        width: 116%;
+        height: 13%;
+    }
+    .vid1{
+        top: 81px;
+        right: 130px;
+        z-index: 10;
+        width: 84%;
+        height: 62%;
+    }
+
+    .sec2{
+        height: 40vh;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+    .mobtext{
+        width: 45%;
+    }
+    .mobtext> :first-child{
+        font-weight: 700;
+      font-size: 3rem;
+    }
+    .mobtext> :nth-child(2){
+        font-weight: 300;
+      font-size: 1.5rem;
+    }
+    .sec2img{
+        left: 21px;
+        position: relative;
+        width: 28rem;
+        height: 21rem;
+    }
+    .sec2img2{
+        width: 5rem;
+        height: 4rem;
+    }
+    #down{
+        width: 3rem;
+        height: 3rem;
+    }
+    .downanim{
+        height: 5rem;
+        width: 17rem;
+        margin: auto;
+        top: 232px;
+        left: 94px;
+        justify-content: space-evenly;
+    }
+    .downtext> :first-child{
+        font-family: "Kanit", sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    
+    .downtext> :nth-child(2){
+        font-size: 1rem;
+        color: rgb(12, 87, 185);
+    }
+    .downtext{
+        left: 10px;
+        position: relative;
+    }
+
+
+    .sec3{
+        height: 40vh;
+        width: 100%;
+        /* justify-content: flex-start;
+        gap: 3rem; */
+    }
+    #sec3tv{
+        left: -57px;
+        width: 29rem;
+        height: 21rem;
+        top: 28px;
+    }
+    .vid2{
+        top: 60px;
+        right: 147px;
+        width: 19rem;
+        height: 9.95rem;
+    }
+    .sec4{
+        flex-direction: row;
+        height: 45vh;
+        width: 100%;
+        text-align: left;
+        padding: 0px;
+        gap: 2rem;
+    } 
+    .sec4img{
+        width: 28rem;
+        height: 21.95rem;
+    }
+    .sec5 {
+        width: 100%;
+        height: 80vh;
+    }
+    .lowtxt{
+        font-size:1.4rem;
+        font-weight: 300;
+        line-height: 2.2;
+    }
+    .email2{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        width: 70%;
+        height: 16%;
+        padding-bottom: 30px;
+    }
+    .start2{
+        height: 54%;
+        width: 24%;
+        font-size: 1.6rem;
+        font-weight: 600;
+        top: 0px;
+        padding-bottom: 15px;
+    }
+    .gsarrow{
+        width: 20px;
+    }
+    .emailaddress{
+        width: 46%;
+        height: 50%;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .english2 img {
+        height: 6%;
+        width: 14%;
+    }
+    .english2{
+        font-size: 1rem;
+        width: 16%;
+        height: 7%;
+    }
+
+}
